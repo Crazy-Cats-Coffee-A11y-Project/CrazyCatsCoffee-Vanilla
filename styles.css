@@ -81,16 +81,6 @@ nav ul {
 	justify-content: center;
 }
 
-a:hover, a:focus {
-    text-decoration: none;
-    color: var(--clr-spice);
-    font-weight: bolder;
-}
-
-/* a:visited {
-    color: var(--clr-spice);
-} */
-
 nav li {
 	margin: 1rem 1em;
 }
@@ -98,21 +88,15 @@ nav li {
 nav a {
 	color: var(--clr-beige);
 	text-transform: uppercase;
+    text-decoration: none;
 }
-
 
 nav a:hover, nav a:focus {
-    background-color: var(--clr-beige);
-    color: var(--clr-spice);
-    padding: .25rem .5rem;
-    border-radius: 20px;
+    text-decoration: underline;
+    text-underline-offset: .75rem;
+    font-weight: 800;
+    cursor: pointer;
 }
-
-/* nav a:hover > a:hover, nav a:visited > a:focus {
-    color: var(--clr-spice);
-	text-transform: uppercase;
-} */
-
 
 footer {
 	background: var(--clr-black-brown);
@@ -139,6 +123,13 @@ em {
 
 .a11y--skip-to-main {
 	color: var(--clr--tan);
+    text-decoration: none;
+}
+
+.a11y--skip-to-main:hover, .a11y--skip-to-main:focus {
+	text-decoration: underline;
+    text-underline-offset: .5rem;
+    cursor: pointer;
 }
 
 .logo {
@@ -207,11 +198,32 @@ em {
 }
 
 /* ANIMATED CALL TO ACTION BUTTON */
-/* CODE CREDIT: restyled from this code pen: https://codepen.io/IzzatAzmi/pen/KWemrY?editors=0100 */
+
 
 .btn--cta {
-  
+  background-color: var(--clr-holiday-purple);
+  color: var(--clr-white);
+  font-size: 1.15rem;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  position: relative;
+  border: 5px solid var(--clr-holiday-green);
 }
+
+  .btn--cta:hover, .btn--cta:focus {
+   transform: scale(1.5);
+   font-weight: bold;
+  }
+
+  .btn--cta:active {
+    background-color: var(--clr-holiday-green);
+    color: var(--clr-white);
+    border: 5px solid var(--clr-holiday-purple);
+  }
+
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 500px) {
