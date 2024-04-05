@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Lobster&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Dosis:wght@200..800&family=Lobster&display=swap');
 
 :root {
 	--clr-beige: #ddc3a5;
@@ -9,7 +9,8 @@
 	--clr-holiday-green: #37785a;
 	--clr-holiday-purple: #783755;
 	/* 	Beige #DDC3A5, Black-brown #201E20, Tan #E0A96D, Spice 783937*/
-	--ff-heading: "Lobster", sans-serif;
+	--ff-brand: "Lobster", serif;
+    --ff-heading: "Dosis", sans-serif;
 	--ff-body: "Cabin Condensed", sans-serif;
 }
 
@@ -48,6 +49,10 @@ body {
 	background: var(--clr-beige);
 	color: var(--clr-black-brown);
 	line-height: 1.7rem;
+}
+
+main {
+    margin: 0 2rem;
 }
 
 h1,
@@ -196,34 +201,6 @@ em {
     color: var(--clr-spice);
     padding: .25rem .5rem;
 }
-
-/* ANIMATED CALL TO ACTION BUTTON */
-
-
-.btn--cta {
-  background-color: var(--clr-holiday-purple);
-  color: var(--clr-white);
-  font-size: 1.15rem;
-  padding: 1rem 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.8s ease;
-  position: relative;
-  border: 5px solid var(--clr-holiday-green);
-}
-
-  .btn--cta:hover, .btn--cta:focus {
-   transform: scale(1.5);
-   font-weight: bold;
-  }
-
-  .btn--cta:active {
-    background-color: var(--clr-holiday-green);
-    color: var(--clr-white);
-    border: 5px solid var(--clr-holiday-purple);
-  }
-
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 500px) {
