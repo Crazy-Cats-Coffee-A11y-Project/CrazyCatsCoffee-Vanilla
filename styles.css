@@ -52,15 +52,25 @@ body {
 }
 
 main {
-    margin: 0 2rem;
+    margin: 0 3rem;
 }
 
 h1,
 h2 {
-	font-family: var(--ff-heading);
 	color: var(--clr-spice);
 	text-align: center;
 	padding: 2rem 0;
+}
+
+h1 {
+    font-family: var(--ff-brand);
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: var(--ff-heading);
+    font-size: 1.75rem;
+    font-weight: bolder;
 }
 
 h3 {
@@ -176,12 +186,17 @@ em {
 	text-transform: none;
 }
 
-.font--like-h2 {
+.font--brand-header {
+    font-family: var(--ff-brand);
+    font-size: 1.75rem;
+}
+
+/* .font--like-h2 {
 	font-family: var(--ff-heading);
 	color: var(--clr-spice);
 	text-align: center;
 	padding: 2rem 0;
-}
+} */
 
 .font--italic {
 	font-style: italic;
