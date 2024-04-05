@@ -76,6 +76,7 @@ h2 {
 h3 {
 	color: var(--clr-spice);
 	text-decoration: underline;
+    font-weight: 550;
 }
 
 header {
@@ -136,6 +137,11 @@ em {
 	font-size: 1.25rem;
 }
 
+blockquote {
+    font-style: italic;
+    font-size: 1.25rem;
+}
+
 .a11y--skip-to-main {
 	color: var(--clr--tan);
     text-decoration: none;
@@ -158,8 +164,42 @@ em {
     flex-direction: column;
 }
 
+.p--excited {
+    font-size: 1.5rem;
+    line-height: 1.85rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+
+.p--event {
+    width: 30vw;
+}
+
+.container--event {
+    display: flex;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+}
+
+.img--book-cover {
+    max-width: 20rem;
+}
+
 .text--align-center {
     text-align: center;
+}
+
+.font--bold {
+    font-weight: bold;
+}
+
+.font--size-2 {
+    font-size: 2rem;
 }
 
 .image--centered {
@@ -176,8 +216,12 @@ em {
     margin: 0 auto;
 }
 
-.padding-y-2 {
+.padding--y-2 {
     padding: 2rem 0;
+}
+
+.margin-bottom-2 {
+    margin-bottom: 2rem;
 }
 
 .footer--nav {
@@ -244,6 +288,10 @@ em {
 
     .logo {
         max-width: 20vw;
+    }
+
+    .p--event {
+        width: 80vw;
     }
   }
 

@@ -44,7 +44,8 @@ https://codepen.io/gingerkiwi/pen/ExJoGda
 .cat {
 	position: relative;
 	height: var(--size);
-	/* width: var(--size) * 1.13; */
+	width: var(--size) * 1.13;
+    aspect-ratio: 1/1;
 }
 
 /* // Ears */
@@ -160,16 +161,6 @@ https://codepen.io/gingerkiwi/pen/ExJoGda
 	border-radius: 50%;
 	animation: look-around 4s infinite;
 	
-	@keyframes look-around {
-		0% { transform: translate(0) }
-		5% { transform: translate(50%, -25%) }
-		10% { transform: translate(50%, -25%) }
-		15% { transform: translate(-100%, -25%) }
-		20% { transform: translate(-100%, -25%) }
-		25% { transform: translate(0, 0) }
-		100% { transform: translate(0, 0) }
-	}
-	
 	.eye--left & {
 		right: 30%;
 	}
@@ -218,6 +209,16 @@ https://codepen.io/gingerkiwi/pen/ExJoGda
     align-items: center;
     justify-content: center;
 } */
+
+@keyframes look-around {
+    0% { transform: translate(0) }
+    5% { transform: translate(50%, -25%) }
+    10% { transform: translate(50%, -25%) }
+    15% { transform: translate(-100%, -25%) }
+    20% { transform: translate(-100%, -25%) }
+    25% { transform: translate(0, 0) }
+    100% { transform: translate(0, 0) }
+}
 
 figure {
     
