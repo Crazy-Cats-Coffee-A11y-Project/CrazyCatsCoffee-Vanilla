@@ -1,4 +1,6 @@
-/* $color-black: #161616;
+/* SCSS from the orginal codepen by Johan Mouchet 
+https://codepen.io/johanmouchet/pen/OXxvqM
+$color-black: #161616;
 $color-white: #fff;
 $color-beige: #ddc3a5;
 $color-blue: #67e8f9;
@@ -6,8 +8,11 @@ $color-orange:#F26A08;
 $color-spice: #783937;
 $size: 170px; // (Fully responsive) 
 
-https://codepen.io/gingerkiwi/pen/ExJoGda
+My codepen: https://codepen.io/gingerkiwi/pen/ExJoGda
 */
+
+/* Note: some colour variables are repeats of that in styles.css
+This file is being used as a standalone file to demonstrate "prefers-reduced-motion */
 
 :root {
 	--clr-black: #161616;
@@ -19,8 +24,6 @@ https://codepen.io/gingerkiwi/pen/ExJoGda
 
     --size: 170px;
 }
-
-
 
 /* // Utility Classes */
 
@@ -193,22 +196,6 @@ https://codepen.io/gingerkiwi/pen/ExJoGda
 	transform: translateX(-50%);
 	border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
-
-/* General page styling */
-/* html {
-	height: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-	background: $color-beige;
-} */
-
-/* .cat--container {
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 @keyframes look-around {
     0% { transform: translate(0) }
