@@ -65,6 +65,7 @@ h2 {
 h1 {
     font-family: var(--ff-brand);
     font-size: 2.5rem;
+    line-height: 3.25rem;
 }
 
 h2 {
@@ -233,6 +234,7 @@ blockquote {
 .font--brand-header {
     font-family: var(--ff-brand);
     font-size: 1.75rem;
+    line-height: 2.25rem;
 }
 
 /* .font--like-h2 {
